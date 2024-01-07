@@ -1,0 +1,17 @@
+.sidenav {
+  background: #FFF;
+  width: 180px;
+  box-shadow: 0px 10px 20px 0px rgba(60, 87, 161, 0.35);
+  border-right: none;
+}
+
+.sidenav div {
+  display: flex;
+  gap: .5rem;
+  color: #4254B5;
+}
+
+.content {
+  background: #FFF;
+  padding: 2.5rem;
+}
