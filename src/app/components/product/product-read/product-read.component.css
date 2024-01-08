@@ -1,0 +1,16 @@
+.table-actions a {
+  cursor: pointer;
+  margin-right: 1.5rem !important;
+}
+
+.column-actions {
+  width: 160px;
+}
+
+a.edit {
+  color: #4254B5;
+}
+
+a.delete {
+  color: #E35E6B;
+}
