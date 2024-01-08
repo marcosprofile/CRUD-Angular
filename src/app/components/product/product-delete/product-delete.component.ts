@@ -1,27 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AppMaterialModule } from '../../../app-material.module';
 import { ProductService } from '../product.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../product.model';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-product-update',
+  selector: 'app-product-delete',
   standalone: true,
   imports: [ AppMaterialModule ],
-  templateUrl: './product-update.component.html',
-  styleUrl: './product-update.component.css'
+  templateUrl: './product-delete.component.html',
+  styleUrl: './product-delete.component.css'
 })
-export class ProductUpdateComponent implements OnInit {
+export class ProductDeleteComponent {
   product: Product = {
     name: '',
     price: 0
   };
-
-  productForm = new FormGroup({
-    name: new FormControl('', Validators.required),
-    price: new FormControl('', Validators.required),
-  })
 
   constructor(
     private productService: ProductService,
@@ -39,11 +33,13 @@ export class ProductUpdateComponent implements OnInit {
     }
   }
 
-  updateProduct(): void {
-    this.productService.update(this.product).subscribe(() => {
-      this.productService.showMessage('Produto atualizado com sucesso!')
-      this.router.navigate(['/products'])
-    })
+  deleteProduct(): void {
+    if (this.product.id !== undefined && !isNaN(this.product.id)) {
+      this.productService.delete(this.product.id).subscribe(() => {
+        this.productService.showMessage('Produto excluído com sucesso!')
+        this.router.navigate(['/products'])
+      })
+    }
   }
 
   cancel(): void {

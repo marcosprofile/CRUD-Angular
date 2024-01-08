@@ -4,7 +4,11 @@ form {
 }
 
 .title {
-  margin-bottom: 1rem !important;
+  margin-bottom: .5rem !important;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem !important;
 }
 
 mat-form-field {

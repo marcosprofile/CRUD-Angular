@@ -1,19 +1,20 @@
 <mat-card>
   <mat-card-content>
     <mat-card-title class="title">
-      Alterar Produto
+      Atualizar produto
     </mat-card-title>
-    <form>
+    <form [formGroup]="productForm">
       <mat-form-field>
-        <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        <input matInput placeholder="Nome" [(ngModel)]="product.name" formControlName="name">
       </mat-form-field>
-      <mat-form-field>
-        <input type="number" matInput placeholder="Preço" [(ngModel)]="product.price" name="price">
+      <mat-form-field class="price">
+        <input matInput type="number" [(ngModel)]="product.price" formControlName="price" min="0" placeholder="0.00">
+        <span matTextPrefix>R$&nbsp;</span>
       </mat-form-field>
     </form>
     <div class="action j-start">
-      <button mat-raised-button color="primary" (click)="updateProduct()">
-        Salvar
+      <button mat-raised-button color="primary" (click)="updateProduct()" [disabled]="!productForm.valid">
+        Atualizar
       </button>
       <button mat-button color="primary" (click)="cancel()">
         Cancelar
@@ -21,3 +22,4 @@
     </div>
   </mat-card-content>
 </mat-card>
+

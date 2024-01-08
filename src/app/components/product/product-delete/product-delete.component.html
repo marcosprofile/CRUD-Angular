@@ -1,20 +1,23 @@
 <mat-card>
   <mat-card-content>
     <mat-card-title class="title">
-      Novo Produto
+      Excluir produto
     </mat-card-title>
-    <form [formGroup]="productForm">
+    <mat-card-subtitle class="subtitle">
+      Deseja realmente excluir este produto?
+    </mat-card-subtitle>
+    <form>
       <mat-form-field>
-        <input matInput placeholder="Nome" [(ngModel)]="product.name" formControlName="name">
+        <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" disabled>
       </mat-form-field>
       <mat-form-field class="price">
-        <input matInput type="number" [(ngModel)]="product.price" formControlName="price" min="0" placeholder="0.00">
+        <input type="number" matInput placeholder="Preço" [(ngModel)]="product.price" name="price" disabled>
         <span matTextPrefix>R$&nbsp;</span>
       </mat-form-field>
     </form>
     <div class="action j-start">
-      <button mat-raised-button color="primary" (click)="createProduct()" [disabled]="!productForm.valid">
-        Salvar
+      <button mat-raised-button color="warn" (click)="deleteProduct()">
+        Excluir
       </button>
       <button mat-button color="primary" (click)="cancel()">
         Cancelar
@@ -22,4 +25,3 @@
     </div>
   </mat-card-content>
 </mat-card>
-

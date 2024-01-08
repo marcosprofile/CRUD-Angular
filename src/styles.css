@@ -24,6 +24,10 @@ body {
   color: #4254B5;
 }
 
+.subtitle {
+  font-weight: 400 !important;
+}
+
 .action {
   width: 100%;
   display: flex;
@@ -54,4 +58,8 @@ body {
 
 .id {
   width: 64px;
+}
+
+.price input {
+  text-align: right;
 }
