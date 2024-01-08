@@ -1,6 +1,6 @@
 .sidenav {
   background: #FFF;
-  width: 180px;
+  width: 210px;
   box-shadow: 0px 10px 20px 0px rgba(60, 87, 161, 0.35);
   border-right: none;
 }
@@ -14,4 +14,11 @@
 .content {
   background: #FFF;
   padding: 2.5rem;
+  max-height: 80vh;
+}
+
+@media (max-width: 1375px) {
+  .content {
+    max-height: 70vh;
+  }
 }

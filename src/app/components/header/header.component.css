@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  background: #1E2652;
   box-shadow: 0px 10px 20px 0px rgba(195, 200, 215, 0.3);
 }
 
@@ -11,8 +12,15 @@
   border-right: 1px solid #333;
 }
 
+.header span:nth-child(1) {
+  display: flex;
+  height: 32px;
+  border-right: 1px solid #FFFFFF;
+}
+
 .logo {
   max-height: 32px;
+  margin-right: 1.5rem;
 }
 
 .title-group a {

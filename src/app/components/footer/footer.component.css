@@ -5,11 +5,15 @@
   bottom: 0;
   z-index: 2;
   background: #FFFFFF;
-  height: 48px;
+  height: 40px;
   box-shadow: 0px 3px 16px 0px rgba(60, 87, 161, 0.35);
 }
 
 .footer > span {
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: 400;
+}
+
+.footer i {
+  font-size: .875rem;
 }
