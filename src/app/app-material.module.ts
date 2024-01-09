@@ -12,11 +12,14 @@ import { MatInputModule } from '@angular/material/input';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 
 registerLocaleData(localePt)
 
 @NgModule({
   exports: [
+    RouterModule,
     MatCardModule,
     MatTableModule,
     MatToolbarModule,
@@ -26,11 +29,11 @@ registerLocaleData(localePt)
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [{
     provide: LOCALE_ID,
-    useValue: 'pt-br'
+    useValue: 'pt-br',
   }]
 })
 

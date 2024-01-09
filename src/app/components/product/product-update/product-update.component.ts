@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AppMaterialModule } from '../../../app-material.module';
-import { ProductService } from '../product.service';
+import { ProductService } from '../../../services/product.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Product } from '../product.model';
+import { Product } from '../../../models/product.model';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({

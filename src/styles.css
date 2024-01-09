@@ -63,3 +63,24 @@ body {
 .price input {
   text-align: right;
 }
+
+.msg-success {
+  background-color: #28A745;
+  color: #FFFFFF;
+  border-radius: .25rem;
+}
+
+.msg-error {
+  background-color: #E35E6B;
+  color: #FFFFFF;
+  border-radius: .25rem;
+}
+
+.msg-success div:nth-child(1), .msg-error div:nth-child(1) {
+  background-color: unset;
+}
+
+.msg-success .mdc-button__label, .msg-error .mdc-button__label {
+  background: unset;
+  color: #FFFFFF;
+}
