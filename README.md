@@ -27,7 +27,7 @@ Este projeto foi desenvolvido com angular 17 com o intuito de aprimorar meus con
 $ será necessário para armazenar o backend e o frontend
 
 # Crie a pasta do backend
-$ dentro da pasta criada com o projeto clonado, crie uma nova pasta fora da pasta do projeto clonado chamada backend
+$ dentro da pasta principal, crie uma nova pasta chamada backend
 
 # Acesse a pasta backend no terminal/cmd
 $ cd <nome-da-pasta-principal>/backend
