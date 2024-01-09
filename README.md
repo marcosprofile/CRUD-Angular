@@ -1,4 +1,4 @@
-# Frontend
+# CRUD Angular 17
 
 >This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
@@ -59,11 +59,10 @@ $ "scripts": {
 ### Frontend
 ```bash
 # Clone este repositório
-$ git clone https://github.com/marcosprofile/crud-angular-v17.git
+$ git clone https://github.com/marcosprofile/frontend.git
 
 # Adicione a pasta do projeto clonado dentro da pasta principal
 $ este passo é necessário para conectar o frontend com o backend.
-$ para padronizar, renomeie a pasta do projeto clonado para /frontend/.
 
 # Acesse a pasta principal do projeto no terminal/cmd
 $ cd <nome-da-pasta-principal>
