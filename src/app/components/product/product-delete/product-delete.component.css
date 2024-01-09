@@ -1,14 +1,7 @@
 form {
   display: flex;
   flex-direction: column;
-}
-
-.title {
-  margin-bottom: .5rem !important;
-}
-
-.subtitle {
-  margin-bottom: 1.5rem !important;
+  margin-top: 2rem;
 }
 
 mat-form-field {
