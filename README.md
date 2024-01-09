@@ -38,13 +38,14 @@ $ npm init -y
 # Instale o json-server
 $ npm i json-server
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd <nome-da-pasta>
+# Acesse a pasta principal do projeto no terminal/cmd
+$ cd <nome-da-pasta-principal>
 
 # Abra no VSCode
 $ code .
 
-# Crie um banco de dados simples db.json
+# Crie um arquivo db.json na pasta backend
+$ no arquivo, crie a seguinte estrutura:
 $ { "products": [] }
 
 # Altere a porta de execução do banco de dados no arquivo package.json
